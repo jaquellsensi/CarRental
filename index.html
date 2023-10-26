@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ACME Car Rental </h1>
+
+    <div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label">Pickup Date: </label>
+        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+      </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Number of days: </label>
+        <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+      </div>
+
+    <h4>options</h4>
+
+    <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+            Electronic Toll Tag ($3.95/day)
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+            GPS ($2.95/day)
+        </label>
+      </div>
+   <div class="form-check">
+    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+    <label class="form-check-label" for="flexCheckDefault">
+      Roadside Assistance ($2.95/day)
+    </label>
+  </div>
+
+
+   <h3>Under 25</h3>
+
+   <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+    <label class="form-check-label" for="inlineRadio1">No</label>
+  </div>
+  <div class="form-check form-check-inline">
+    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+    <label class="form-check-label" for="inlineRadio2">Yes</label>
+  </div>
+
+
+
+  <button class="btn btn-secondary" id="totalButton" >Estimate total cost</button>
+
+  
+  <div>Car Rental:  <span id="rentalDisplay"></span></div>
+  <div>Options: <span id="optionsDisplay"></span></div>
+  <div>Under 25 surcharge: <span id="underageDisplay"></span></div>
+  <div>Total Due: <span id="totalDisplay"></span></div>
+  <table class="table table-hover mt-3">
+      <thead class="thead-light">
+          <tr>
+              <th class="bg-primary text-light">Option</th>
+              <th class="bg-primary text-light">Cost</th>
+          </tr>
+      </thead>
+
+
+
+ <scripts src= CarRental/scripts.js"></scripts>
+</body>
+</html>
